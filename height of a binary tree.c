@@ -28,7 +28,7 @@ int patanahi(struct node *root)
 {
     if(root == NULL)
         return 0;
-    return (patanahi(root->left) + patanahi(root->right)) +1;
+    return max(patanahi(root->left) + patanahi(root->right)) +1;
 }
 
 int main()
